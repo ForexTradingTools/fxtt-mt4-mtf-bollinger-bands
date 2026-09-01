@@ -10,7 +10,6 @@
 
 ![MTF Bollinger Bands MT4](screenshots/mtf-bollinger-bands-mt4.png)
 
-![MTF Bollinger Bands featured](screenshots/mtf-bollinger-bands-featured.png)
 
 ---
 
