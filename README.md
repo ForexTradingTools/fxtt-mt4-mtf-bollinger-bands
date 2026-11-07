@@ -4,12 +4,15 @@
 
 [![Platform](https://img.shields.io/badge/Platform-MetaTrader%204-blue)](#compatibility)
 [![License](https://img.shields.io/badge/License-MIT-brightgreen)](#license)
-[![Version](https://img.shields.io/badge/Version-1.00-orange)](#changelog)
+[![Version](https://img.shields.io/badge/Version-1.10-orange)](#changelog)
 
 ---
 
 ![MTF Bollinger Bands MT4](screenshots/mtf-bollinger-bands-mt4.png)
 
+> **Released version: 1.10.** This is the build the [product page](https://forextradingtools.eu/en/marketplace/mtf-bollinger-bands) download ships, published as the [v1.10 release](https://github.com/ForexTradingTools/fxtt-mt4-mtf-bollinger-bands/releases/tag/v1.10). Its source is [`releases/FXTT_MTF_BollingerBands-v1_10.mq4`](releases/FXTT_MTF_BollingerBands-v1_10.mq4).
+>
+> **`src/` holds 1.00, an unreleased rewrite** with the draggable panel described below. It stays unreleased until the product page is updated for it. `releases/FxTT_MTF_BollingerBands-v1_00-preview.ex4` is a preview build of it.
 
 ---
 
@@ -54,7 +57,13 @@ Timeframes lower than the active chart timeframe are disabled automatically. The
 
 ## Installation
 
-### Compile from source
+### Released build
+
+1. Download `FXTT_MTF_BollingerBands.zip` from the [v1.10 release](https://github.com/ForexTradingTools/fxtt-mt4-mtf-bollinger-bands/releases/tag/v1.10) and extract `FXTT_MTF_BollingerBands.ex4`.
+2. In MT4, choose **File → Open Data Folder**, open `MQL4/Indicators`, and copy the `.ex4` there.
+3. Refresh the Navigator and drag **FXTT_MTF_BollingerBands** onto a chart.
+
+### Compile the unreleased 1.00 rewrite from source
 
 1. Download or clone this repository.
 2. Copy `src/FxTT_MTF_BollingerBands.mq4` to your terminal's `MQL4/Indicators` folder. Open it with **File → Open Data Folder** in MT4 to find the correct data folder.
@@ -62,7 +71,7 @@ Timeframes lower than the active chart timeframe are disabled automatically. The
 4. Return to MT4, open **Navigator** with **Ctrl+N**, right-click **Indicators**, and choose **Refresh**.
 5. Drag **FxTT MTF Bollinger Bands** onto a chart and configure the inputs.
 
-The `releases/` directory is reserved for packaged compiled releases. This source repository does not include a fabricated or precompiled binary.
+`releases/` holds the released 1.10 build and source, plus a preview build of the unreleased `src/` rewrite.
 
 ### Updating
 
@@ -112,12 +121,13 @@ Drag the `BB Panel` header to move the panel. Click the header to collapse or ex
 
 | Version | Date | Notes |
 |---|---|---|
-| **1.00** | September 2026 | Initial MT4 release with nine timeframe bands, draggable/collapsible panel, timeframe toggles, persistent panel state, configurable band labels, and configurable Bollinger inputs. |
+| **1.00 (unreleased, `src/`)** | September 2026 | Rewrite with nine timeframe bands, draggable/collapsible panel, timeframe toggles, persistent panel state, configurable band labels, and configurable Bollinger inputs. Not shipped until the product page covers it. |
+| **1.10 (released)** | 2016 | Build shipped by the product page download. |
 
 ## Source and release layout
 
-- `src/` — compile-ready MQL4 source.
-- `releases/` — location for packaged compiled MT4 releases when published.
+- `src/` — unreleased 1.00 rewrite (compile-ready MQL4 source).
+- `releases/` — released 1.10 build (`FXTT_MTF_BollingerBands-v1_10.ex4`) and its source (`FXTT_MTF_BollingerBands-v1_10.mq4`); `FxTT_MTF_BollingerBands-v1_00-preview.ex4` is the unreleased preview build.
 - `screenshots/` — product screenshots used in this README and release materials.
 - `LICENSE` — MIT license.
 
